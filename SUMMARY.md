@@ -25,6 +25,7 @@
   * [Contract view function](functionality/customized-contact-table-function/contract-view-function.md)
 * [Parameter Setting](functionality/parameter-setting/README.md)
   * [Verbose logging](functionality/parameter-setting/verbose-logging.md)
+  * [Configs setting](functionality/parameter-setting/configs-setting.md)
 
 ## Types
 

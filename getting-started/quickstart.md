@@ -10,19 +10,26 @@ First, you need to install DuckDB first, it is pretty easy, you can check this: 
 
 DuckDB is an in-process database system and offers client APIs for several languages: [clients api overview](https://duckdb.org/docs/api/overview).
 
+The compatibility between BlockDuck and BlockDB varies across versions. Refer to the list below to identify the correct BlockDB version compatible with your chosen BlockDuck.
 
+| Version of BlockDuck | Version of DuckDB |
+| -------------------- | ----------------- |
+| v0.5.0               | v1.1.3            |
+|                      |                   |
 
 ### Install BlockDuck
 
 #### Download
 
+* v0.5.0
+
 | Arch               | Download link                                                                                  |
 | ------------------ | ---------------------------------------------------------------------------------------------- |
-| linux\_amd64       | [Download](https://github.com/luohaha/BlockDuck/actions/runs/12850432645/artifacts/2452167290) |
-| linux\_amd64\_gcc4 | [Download](https://github.com/luohaha/BlockDuck/actions/runs/12850432645/artifacts/2452170472) |
-| linux\_arm64       | [Download](https://github.com/luohaha/BlockDuck/actions/runs/12850432645/artifacts/2452145936) |
-| osx\_amd64         | [Download](https://github.com/luohaha/BlockDuck/actions/runs/12850432645/artifacts/2452142020) |
-| osx\_arm64         | [Download](https://github.com/luohaha/BlockDuck/actions/runs/12850432645/artifacts/2452138398) |
+| linux\_amd64       | [Download](https://github.com/luohaha/BlockDuck/actions/runs/13072373614/artifacts/2516580766) |
+| linux\_amd64\_gcc4 | [Download](https://github.com/luohaha/BlockDuck/actions/runs/13072373614/artifacts/2516579944) |
+| linux\_arm64       | [Download](https://github.com/luohaha/BlockDuck/actions/runs/13072373614/artifacts/2516584526) |
+| osx\_amd64         | [Download](https://github.com/luohaha/BlockDuck/actions/runs/13072373614/artifacts/2516542999) |
+| osx\_arm64         | [Download](https://github.com/luohaha/BlockDuck/actions/runs/13072373614/artifacts/2516544254) |
 
 
 
