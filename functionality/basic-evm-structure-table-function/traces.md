@@ -49,7 +49,7 @@ To utilize the **eth\_traces\_rpc** function, follow these steps:
 ### **Example**
 
 ```
-D set variable eth_url = 'https://capable-winter-film.quiknode.pro/eeb424c4501392006b590ff1fa7f55e5ce8dc8ac';
+D set variable eth_url = 'https://capable-winter-film.quiknode.pro/{API_KEY}';
 D select * from eth_traces_rpc(21104078, 21104078, getvariable('eth_url'));
 ┌──────────────────────┬─────────────┬──────────────┬──────────────────────┬──────────────────────┬───┬───────────┬──────────────┬─────────┬──────────────────────┬─────────────────────┐
 │      blockHash       │ blockNumber │   callType   │         from         │          to          │ … │ subtraces │ traceAddress │  type   │   transactionHash    │ transactionPosition │
@@ -103,3 +103,6 @@ D select * from eth_traces_rpc(21104078, 21104078, getvariable('eth_url'));
 └───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
 ```
 
+### Dependent RPC Method
+
+* trace\_block

@@ -67,7 +67,7 @@ After that, table function named `eth_contract_event_rpc_tranfer_erc20` already 
 #### **Examples**
 
 ```
-D set variable eth_url = 'https://eth-mainnet.g.alchemy.com/v2/_VAP1LMRwnhUbKarsWEtC_nYZk-yHPEm';
+D set variable eth_url = 'https://eth-mainnet.g.alchemy.com/v2/{API_KEY}';
 D select * from eth_contract_event_rpc_tranfer_erc20([]::VARCHAR[], 21104078, 21104078, getvariable('eth_url')) limit 10;
 ┌──────────────────────┬─────────────┬──────────────────────┬─────────────────────────────────────────┬────────────────────────────────────────────────────────────────────┬──────────────────────────┐
 │       address        │ blockNumber │   transactionHash    │                  from                   │                                 to                                 │          amount          │
@@ -87,3 +87,7 @@ D select * from eth_contract_event_rpc_tranfer_erc20([]::VARCHAR[], 21104078, 21
 │ 10 rows                                                                                                                                                                                   6 columns │
 └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
 ```
+
+### Dependent RPC Method
+
+* eth\_getLogs

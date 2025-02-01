@@ -1,5 +1,5 @@
 ---
-icon: globe-pointer
+icon: shapes
 ---
 
 # How to build

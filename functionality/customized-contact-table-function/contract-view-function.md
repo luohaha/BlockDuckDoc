@@ -87,7 +87,7 @@ After that, table function named `eth_contract_view_rpc_balanceOf` already been 
 #### **Examples**
 
 ```
-set variable eth_url = 'https://eth-mainnet.g.alchemy.com/v2/_VAP1LMRwnhUbKarsWEtC_nYZk-yHPEm';
+set variable eth_url = 'https://eth-mainnet.g.alchemy.com/v2/{API_KEY}';
 select * from eth_contract_view_rpc_balanceOf(['0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984']::varchar[], 21104077, 21104078, '0xD66428f5754db6126059314275676B2820e09135', getvariable('eth_url'));
 ┌────────────────────────────────────────────┬──────────┬──────────────────────┐
 │                  address                   │  block   │      balanceOf0      │
@@ -97,3 +97,7 @@ select * from eth_contract_view_rpc_balanceOf(['0x1f9840a85d5aF5bf1D1762F925BDAD
 │ 0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984 │ 21104078 │ 20166875074384524618 │
 └────────────────────────────────────────────┴──────────┴──────────────────────┘
 ```
+
+### Dependent RPC Method
+
+* eth\_call

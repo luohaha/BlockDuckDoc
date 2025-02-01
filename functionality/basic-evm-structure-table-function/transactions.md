@@ -45,7 +45,7 @@ To utilize the **eth\_transactions\_rpc** function, follow these steps:
 ### **Example**
 
 ```
-D set variable eth_url = 'https://eth-mainnet.g.alchemy.com/v2/_VAP1LMRwnhUbKarsWEtC_nYZk-yHPEm';
+D set variable eth_url = 'https://eth-mainnet.g.alchemy.com/v2/{API_KEY}';
 D select * from eth_transactions_rpc(21104078, 21104178, getvariable('eth_url')) limit 10;
 ┌──────────────────────┬─────────────┬──────────────────┬─────────┬──────────────────────┬───┬──────────────────────┬──────────────────┬──────────────┬─────────┬──────────────────────┐
 │      blockHash       │ blockNumber │ transactionIndex │  nonce  │         hash         │ … │          to          │      value       │   gasPrice   │   gas   │        input         │
@@ -65,3 +65,7 @@ D select * from eth_transactions_rpc(21104078, 21104178, getvariable('eth_url'))
 │ 10 rows                                                                                                                                                        11 columns (10 shown) │
 └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
 ```
+
+### Dependent RPC Method
+
+* eth\_getBlockByNumber

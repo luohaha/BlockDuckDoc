@@ -23,7 +23,7 @@ The **eth\_latest\_block\_rpc** table provides the latest block number of EVM ch
 ### **Examples**
 
 ```
-D set variable eth_url = 'https://eth-mainnet.g.alchemy.com/v2/_VAP1LMRwnhUbKarsWEtC_nYZk-yHPEm';
+D set variable eth_url = 'https://eth-mainnet.g.alchemy.com/v2/{API_KEY}';
 D select * from eth_latest_block_rpc(getvariable('eth_url'));
 ┌──────────────┐
 │ latest_block │
@@ -32,3 +32,7 @@ D select * from eth_latest_block_rpc(getvariable('eth_url'));
 │     21623511 │
 └──────────────┘
 ```
+
+### Dependent RPC Method
+
+* eth\_blockNumber

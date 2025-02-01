@@ -51,7 +51,7 @@ To utilize the **eth\_logs\_rpc** function, follow these steps:
 ### **Example**
 
 ```
-D set variable eth_url = 'https://eth-mainnet.g.alchemy.com/v2/_VAP1LMRwnhUbKarsWEtC_nYZk-yHPEm';
+D set variable eth_url = 'https://eth-mainnet.g.alchemy.com/v2/{API_KEY}';
 D select * from eth_logs_rpc([]::VARCHAR[], []::VARCHAR[], 21104078, 21104089, getvariable('eth_url')) limit 10;
 ┌──────────────────────┬──────────────────────┬─────────────┬──────────────────────┬──────────┬─────────┬──────────────────────┬───────────────────────────────────────────────────┬──────────────────┐
 │       address        │      blockHash       │ blockNumber │         data         │ logIndex │ removed │        topics        │                  transactionHash                  │ transactionIndex │
@@ -71,3 +71,7 @@ D select * from eth_logs_rpc([]::VARCHAR[], []::VARCHAR[], 21104078, 21104089, g
 │ 10 rows                                                                                                                                                                                   9 columns │
 └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
 ```
+
+### Dependent RPC Method
+
+* eth\_getLogs

@@ -47,7 +47,7 @@ To utilize the **eth\_blocks\_rpc** function, follow these steps:
 The above example demonstrates how to query Ethereum block data using a specified range of block numbers and an RPC URL. The table output displays various attributes of the Ethereum blocks, such as the block hash, block number, nonce, base fee per gas, parent hash, miner address, difficulty, total difficulty, size, gas limit, gas used, and timestamp. These attributes provide valuable insights into the blockchain's state and activity for the queried range of blocks.
 
 ```
-D set variable eth_url = 'https://eth-mainnet.g.alchemy.com/v2/_VAP1LMRwnhUbKarsWEtC_nYZk-yHPEm';
+D set variable eth_url = 'https://eth-mainnet.g.alchemy.com/v2/{API_KEY}';
 D select * from eth_blocks_rpc(21104078, 21104178, getvariable('eth_url')) limit 10;
 ┌──────────────────────┬──────────┬────────────────────┬───────────────┬──────────────────────┬──────────────────────┬───┬──────────────────────┬────────┬──────────┬──────────┬─────────────────────┐
 │         hash         │  number  │       nonce        │ baseFeePerGas │      parentHash      │        miner         │ … │   totalDifficulty    │  size  │ gasLimit │ gasUsed  │      timestamp      │
@@ -67,3 +67,9 @@ D select * from eth_blocks_rpc(21104078, 21104178, getvariable('eth_url')) limit
 │ 10 rows                                                                                                                                                                      12 columns (11 shown) │
 └────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
 ```
+
+
+
+### Dependent RPC Method
+
+* eth\_getBlockByNumber

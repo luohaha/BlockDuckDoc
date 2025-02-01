@@ -1,5 +1,5 @@
 ---
-icon: arrows-rotate-reverse
+icon: vial
 ---
 
 # Try your first query

@@ -1,5 +1,5 @@
 ---
-icon: bullseye-arrow
+icon: power-off
 ---
 
 # Quickstart
@@ -47,6 +47,18 @@ And then load BlockDuck:
 
 ```
 LOAD '/path/to/extension/blockduck.duckdb_extension';
+```
+
+Check BlockDuck version:
+
+```
+D select * from blockduck_version();
+┌─────────┐
+│ version │
+│ varchar │
+├─────────┤
+│ v0.5.0  │
+└─────────┘
 ```
 
 * Python
