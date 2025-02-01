@@ -25,11 +25,11 @@ The compatibility between BlockDuck and BlockDB varies across versions. Refer to
 
 | Arch               | Download link                                                                                  |
 | ------------------ | ---------------------------------------------------------------------------------------------- |
-| linux\_amd64       | [Download](https://github.com/luohaha/BlockDuck/actions/runs/13072373614/artifacts/2516580766) |
-| linux\_amd64\_gcc4 | [Download](https://github.com/luohaha/BlockDuck/actions/runs/13072373614/artifacts/2516579944) |
-| linux\_arm64       | [Download](https://github.com/luohaha/BlockDuck/actions/runs/13072373614/artifacts/2516584526) |
-| osx\_amd64         | [Download](https://github.com/luohaha/BlockDuck/actions/runs/13072373614/artifacts/2516542999) |
-| osx\_arm64         | [Download](https://github.com/luohaha/BlockDuck/actions/runs/13072373614/artifacts/2516544254) |
+| linux\_amd64       | [Download](https://github.com/luohaha/BlockDuck/actions/runs/13086356579/artifacts/2520760904) |
+| linux\_amd64\_gcc4 | [Download](https://github.com/luohaha/BlockDuck/actions/runs/13086356579/artifacts/2520760825) |
+| linux\_arm64       | [Download](https://github.com/luohaha/BlockDuck/actions/runs/13086356579/artifacts/2520761279) |
+| osx\_amd64         | [Download](https://github.com/luohaha/BlockDuck/actions/runs/13086356579/artifacts/2520752821) |
+| osx\_arm64         | [Download](https://github.com/luohaha/BlockDuck/actions/runs/13086356579/artifacts/2520754027) |
 
 
 
