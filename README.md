@@ -13,7 +13,6 @@ BlockDuck is a tool for blockchain data analysis based on DuckDB's flexible exte
 #### Key Features of BlockDuck
 
 * **Direct Blockchain Querying**: Perform SQL-like queries on blockchain data without requiring data extraction or loading.
-* **Seamless Integration**: Leverages DuckDB's extension mechanism, allowing users to extend capabilities easily.
 * **Real-Time Analysis**: Eliminates time-consuming ETL processes, enabling faster and more efficient data analysis.
 * **Reduced Costs**: Avoids unnecessary operational and service costs associated with data warehousing solutions.
 * **Lightweight and Powerful**: Utilizes DuckDB’s efficient analytical processing power within the application process.
