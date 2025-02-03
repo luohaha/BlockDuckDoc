@@ -8,15 +8,15 @@ First, we need to create the connection and set up some basic configurations:
 
 ```python
 def build_con():
-    con = duckdb.connect(database = "file.db", config = {"allow_unsigned_extensions": "true"})
-    con.load_extension("./build/release/extension/blockduck/blockduck.duckdb_extension")
+    con = duckdb.connect(database = "file.db")
+    con.execute("INSTALL blockduck FROM community;")
+    con.execute("LOAD blockduck;")
     con.execute("set variable eth_url = 'eth/rpc/provider/url';")
     con.execute("pragma blockduck_set_verbose(true);")
     return con
 ```
 
-1. For now, because BlockDuck isn't signed yet, we need to set `allow_unsigned_extensions` to enable load unsigned extension.
-2. set verbose to true, so we can print more execution details.
+> set verbose to true, so we can print more execution details.
 
 ### Create table
 
@@ -169,8 +169,9 @@ data_queue = Queue()
 
 # build connection
 def build_con():
-    con = duckdb.connect(database = "file.db", config = {"allow_unsigned_extensions": "true"})
-    con.load_extension("./build/release/extension/blockduck/blockduck.duckdb_extension")
+    con = duckdb.connect(database = "file.db")
+    con.execute("INSTALL blockduck FROM community;")
+    con.execute("LOAD blockduck;");
     con.execute("set variable eth_url = 'https://eth-mainnet.g.alchemy.com/v2/_VAP1LMRwnhUbKarsWEtC_nYZk-yHPEm';")
     con.execute("pragma blockduck_set_verbose(true);")
     return con

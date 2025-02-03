@@ -19,37 +19,14 @@ The compatibility between BlockDuck and BlockDB varies across versions. Refer to
 
 ### Install BlockDuck
 
-#### Download
-
-* v0.5.0
-
-| Arch               | Download link                                                                                  |
-| ------------------ | ---------------------------------------------------------------------------------------------- |
-| linux\_amd64       | [Download](https://github.com/luohaha/BlockDuck/actions/runs/13086356579/artifacts/2520760904) |
-| linux\_amd64\_gcc4 | [Download](https://github.com/luohaha/BlockDuck/actions/runs/13086356579/artifacts/2520760825) |
-| linux\_arm64       | [Download](https://github.com/luohaha/BlockDuck/actions/runs/13086356579/artifacts/2520761279) |
-| osx\_amd64         | [Download](https://github.com/luohaha/BlockDuck/actions/runs/13086356579/artifacts/2520752821) |
-| osx\_arm64         | [Download](https://github.com/luohaha/BlockDuck/actions/runs/13086356579/artifacts/2520754027) |
-
-
-
-### Load BlockDuck
-
-* CLI
-
-For now, because BlockDuck isn't signed yet, we need to add `-unsigned` to enable load unsigned extension.
+BlockDuck is one of available DuckDB community [extensions](https://duckdb.org/community_extensions/list_of_extensions) , so we can use `INSTALL`and `LOAD`  to install it easily.
 
 ```
-./build/release/duckdb -unsigned
+INSTALL blockduck FROM community;
+LOAD blockduck;
 ```
 
-And then load BlockDuck:
-
-```
-LOAD '/path/to/extension/blockduck.duckdb_extension';
-```
-
-Check BlockDuck version:
+Next, we can verify whether the installation was successful by querying the version.
 
 ```
 D select * from blockduck_version();
@@ -61,21 +38,5 @@ D select * from blockduck_version();
 └─────────┘
 ```
 
-* Python
-
-To ensure that the BlockDuck extension is loaded correctly in your DuckDB environment, follow these steps. Make sure you specify the necessary configuration to allow unsigned extensions. This can be achieved by setting `allow_unsigned_extensions` to `true` when connecting to your database in Python. Then, use the `load_extension` method to load the BlockDuck extension from its specified path. Here's how you can do it:
-
-1.  **Connect to the Database with Configuration:**
-
-    When connecting to your DuckDB database, make sure to include the configuration option `{"allow_unsigned_extensions": "true"}` to permit loading unsigned extensions.
-2.  **Load the Extension:**
-
-    After establishing the connection, use the `load_extension` method to load the BlockDuck extension into the DuckDB environment.
-
-```python
-import duckdb
-
-con = duckdb.connect(database = "file.db", config = {"allow_unsigned_extensions": "true"})
-con.load_extension("./build/release/extension/blockduck/blockduck.duckdb_extension")
-```
+###
 
