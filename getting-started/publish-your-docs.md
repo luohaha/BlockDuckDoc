@@ -39,7 +39,7 @@ The BlockDuck extension binary will be:
 
 ### Tests
 
-In BlockDuck, there are two types of test cases. One is inherited from DuckDB's `sqllogictest`, and the other is the internal `unittest` of BlockDuck.
+In BlockDuck, there are three types of test cases:
 
 **Sqllogictest**
 
@@ -60,3 +60,19 @@ make
 ./BlockDuckTests
 ```
 
+**CorrectnessTest**
+
+* Run all tests
+
+```
+cd correctness_test/
+python run_tests.py
+```
+
+* Run tests by filter
+
+```
+cd correctness_test/
+python -m unittest discover -s tests -p "test_eth_transactions.py"
+python -m unittest discover -s tests -p "test_*.py"
+```

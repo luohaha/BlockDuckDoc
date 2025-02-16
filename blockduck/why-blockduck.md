@@ -10,7 +10,7 @@ DuckDB is an in-process SQL OLAP (Online Analytical Processing) database managem
 
 BlockDuck is a tool for blockchain data analysis based on DuckDB's flexible extension mechanism. It is designed to perform blockchain data analysis using the power of DuckDB. BlockDuck allows users to query blockchain data in a way that is similar to querying a traditional SQL database, enabling easier and more efficient analysis of blockchain data.
 
-BlockDuck's core design philosophy is: Query Blockchain as a Table.
+BlockDuck's core design philosophy is: **Live SQL Queries on Blockchain**.
 
 ### **Live SQL Queries on Blockchain**
 

@@ -19,6 +19,7 @@
   * [Transactions](functionality/basic-evm-structure-table-function/transactions.md)
   * [Logs](functionality/basic-evm-structure-table-function/logs.md)
   * [Traces](functionality/basic-evm-structure-table-function/traces.md)
+  * [Traces v2](functionality/basic-evm-structure-table-function/traces-v2.md)
   * [Latest Block Number](functionality/basic-evm-structure-table-function/latest-block-number.md)
 * [Customized contact table function](functionality/customized-contact-table-function/README.md)
   * [Contract Events](functionality/customized-contact-table-function/contract-events.md)

@@ -6,7 +6,7 @@ icon: train-track
 
 ### Table function
 
-The **eth\_traces\_rpc** table logs EVM transaction traces, including both main and internal transactions. These traces help in debugging and understanding transaction execution. Also known as `internal transactions`, they provide insights into the transaction processes.
+The **eth\_traces\_rpc** table contains EVM transaction traces, including both main and internal transactions. These traces help in debugging and understanding transaction execution. Also known as `internal transactions`, they provide insights into the transaction processes.
 
 ### **Procedure**
 
@@ -14,7 +14,7 @@ To utilize the **eth\_traces\_rpc** function, follow these steps:
 
 1. **Establish a Connection**: Connect to your Ethereum node using the URL provided in the inputs.
 2. **Set Block Range**: Determine the block range by specifying `fromBlock` and `toBlock`. These arguments represent the starting and ending block numbers for scanning.
-3. **Execute RPC Call**: Invoke the eth\_traces\_rpc function, passing the required arguments (`fromBlock`, `toBlock`, and `url`).
+3. **Execute RPC Call**: Invoke the **eth\_traces\_rpc** function, passing the required arguments (`fromBlock`, `toBlock`, and `url`).
 4. **Retrieve and Analyze Data**: Collect the output data, which includes detailed transaction traces. Use this data to gain insights into transaction processes and perform any necessary debugging or analysis.
 
 ### **Inputs**

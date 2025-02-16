@@ -15,7 +15,7 @@ The compatibility between BlockDuck and BlockDB varies across versions. Refer to
 | Version of BlockDuck | Version of DuckDB |
 | -------------------- | ----------------- |
 | v0.5.0               | v1.1.3            |
-|                      |                   |
+| v0.6.0               | v1.2.0            |
 
 ### Install BlockDuck
 
@@ -34,7 +34,7 @@ D select * from blockduck_version();
 │ version │
 │ varchar │
 ├─────────┤
-│ v0.5.0  │
+│ v0.6.0  │
 └─────────┘
 ```
 
