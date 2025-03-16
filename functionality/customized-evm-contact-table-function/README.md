@@ -2,9 +2,9 @@
 icon: file-signature
 ---
 
-# Customized contact table function
+# Customized EVM contact table function
 
-BlockDuck offer you customized contract table function, which are used to analyze events and states of specific contracts, and needs to be created on-demand using the pragma directive.
+BlockDuck offer you customized contract table function, which are used to analyze events and states of specific EVM contracts, and needs to be created on-demand using the pragma directive.
 
 It's essential to identify the key events and states you want to track. This might include:
 
