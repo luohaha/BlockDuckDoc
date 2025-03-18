@@ -27,6 +27,8 @@
 * [Bitcoin table function](functionality/bitcoin-table-function/README.md)
   * [Blocks](functionality/bitcoin-table-function/blocks.md)
   * [Transactions](functionality/bitcoin-table-function/transactions.md)
+  * [Outputs](functionality/bitcoin-table-function/outputs.md)
+  * [Inputs](functionality/bitcoin-table-function/inputs.md)
 * [Parameter Setting](functionality/parameter-setting/README.md)
   * [Verbose logging](functionality/parameter-setting/verbose-logging.md)
   * [Configs setting](functionality/parameter-setting/configs-setting.md)

@@ -31,3 +31,16 @@ The **bitcoin\_transactions\_rpc** table records Bitcoin blockchain transactions
 | blockhash     | VARCHAR    | Hash of the block containing this transaction                                |
 | confirmations | BIGINT     | Number of confirmations the transaction has received                         |
 | time          | TIMESTAMP  | Timestamp when the transaction was included in a block                       |
+
+### Examples
+
+```
+D set variable bitcoin_url = 'https://bitcoin-mainnet.core.chainstack.com/xxx';
+D select * from bitcoin_transactions_rpc(886654, 886654, getvariable('bitcoin_url')) where hash = '4bc9f4fbd1f3aea067c637daaa2f743e8bcdf7859688fc556964bdf67468c82a';
+┌────────┬──────────────────────┬──────────────────────┬───────┬───────┬────────┬─────────┬──────────┬──────────────────────┬──────────────────────┬───────────────────────────┬───────────────┬─────────────────────┐
+│ height │         txid         │         hash         │ size  │ vsize │ weight │ version │ locktime │         vin          │         vout         │         blockhash         │ confirmations │        time         │
+│ int64  │       varchar        │       varchar        │ int64 │ int64 │ int64  │  int64  │  int64   │        json[]        │        json[]        │          varchar          │     int64     │      timestamp      │
+├────────┼──────────────────────┼──────────────────────┼───────┼───────┼────────┼─────────┼──────────┼──────────────────────┼──────────────────────┼───────────────────────────┼───────────────┼─────────────────────┤
+│ 886654 │ f397dd542f4f1dd0e7…  │ 4bc9f4fbd1f3aea067…  │  377  │  350  │  1400  │    2    │    0     │ [{"coinbase":"037e…  │ [{"n":0,"scriptPub…  │ 0000000000000000000132d…  │     1689      │ 2025-03-07 00:02:24 │
+└────────┴──────────────────────┴──────────────────────┴───────┴───────┴────────┴─────────┴──────────┴──────────────────────┴──────────────────────┴───────────────────────────┴───────────────┴─────────────────────┘
+```
